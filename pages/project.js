@@ -8,6 +8,14 @@ import ProjectSlider from "../components/ProjectSlider";
 import { BsGithub } from "react-icons/bs";
 import { BsBoxArrowUpRight } from "react-icons/bs";
 
+const ProjectMain = styled.div`
+  margin-top: 6.5rem;
+
+  @media screen and (max-width: 768px) {
+    margin-top: 5rem;
+  }
+`
+
 const ProjectHeading = styled.h1`
   font-size: 2.5rem;
   font-weight: 900;
@@ -17,6 +25,15 @@ const ProjectHeading = styled.h1`
 
   span {
     color: #f9af14;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 2rem;
+    margin: 0 0 2.5rem 0;
+  }
+
+  @media screen and (max-width: 380px) {
+    font-size: 1.9rem;
   }
 `;
 
@@ -85,13 +102,13 @@ const Project = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div>
+      <ProjectMain>
         <ProjectHeading>
           projects<span>.</span>
         </ProjectHeading>
 
         <ProjectSlider slides={ProjectData} />
-      </div>
+      </ProjectMain>
     </>
   );
 };

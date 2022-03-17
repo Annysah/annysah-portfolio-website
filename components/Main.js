@@ -9,7 +9,7 @@ import { SiGmail } from "react-icons/si";
 
 const LayoutContainer = styled.div`
   padding: 0 0.5rem;
-  margin-top: 11rem;
+  margin-top: 12rem;
   margin-left: -11%;
   display: flex;
   flex-direction: column;
