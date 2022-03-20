@@ -15,16 +15,17 @@ import {
 } from "react-icons/si";
 
 const StackContainer = styled.div`
-  margin-top: 5rem;
+  margin-top: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  font-family: 'Space Grotesk', sans-serif;
 
-  
-  @media screen and (max-width: 990px) {
-    margin-top: 4.2rem;
+  @media screen and (max-width: 768px) {
+    margin-top: -0.5rem;
   }
+
 `;
 
 const StackHeading = styled.h1`
@@ -55,15 +56,15 @@ const StackContentContainer = styled.div`
     grid-column-gap: 20px;
     grid-row-gap: 40px;
     font-size: 0.7rem;
-    margin-left: 15%;
-    padding: 0 1.5rem;
+    //margin-left: 15%;
+    //padding: 0 1.5rem;
   }
 
   @media screen and (min-width: 350px) and (max-width: 767px) {
     overflow-y: hidden;
     grid-column-gap: 25px;
     font-size: 0.8rem;
-    padding: 0 3rem;
+    //padding: 0 3rem;
   }
 
   @media screen and (min-width: 768px) and (max-width: 990px) {

@@ -18,7 +18,7 @@ const LayoutContainer = styled.div`
 
   @media screen and (max-width: 349px) {
     margin-left: 17%;
-    margin-top: 9rem;
+    margin-top: 5rem;
   }
 
   @media screen and (min-width: 350px) and (max-width: 767px) {
@@ -28,25 +28,8 @@ const LayoutContainer = styled.div`
 
   @media screen and (min-width: 768px) and (max-width: 990px) {
     margin-left: 3%;
-    margin-top: 10rem;
+    margin-top: 6rem;
   }
-`;
-
-const MainArrow = styled.div`
-  font-size: 2.1rem;
-  font-weight: 100;
-  margin-top: 2.6rem;
-  margin-left: -2.5rem;
-  text-align: center;
-  display: flex;
-  justify-content: flex-start;
-`;
-
-const ArrowIcon = styled.div`
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  margin-left: 2rem;
 `;
 
 const ResumeLink = styled.div`
@@ -59,6 +42,7 @@ const ResumeLink = styled.div`
   padding: 12px 16px;
   width: 160px;
   margin-top: 2.5rem;
+  font-family: 'Space Grotesk', sans-serif;
 
   @media screen and (min-width: 350px) and (max-width: 767px) {
     margin-left: 5%;
@@ -73,7 +57,7 @@ const TwitterIcon = styled.div`
   position: absolute;
   top: 24%;
   right: 30%;
-  z-index: 1;
+  z-index: -100;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -104,7 +88,7 @@ const GithubIcon = styled.div`
   position: absolute;
   top: 42%;
   right: 10%;
-  z-index: 1;
+  z-index: -100;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -135,7 +119,7 @@ const GmailIcon = styled.div`
   position: absolute;
   top: 75%;
   right: 15%;
-  z-index: 1;
+  z-index: -100;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -166,7 +150,7 @@ const LinkedInIcon = styled.div`
   position: absolute;
   top: 80%;
   right: 30%;
-  z-index: 1;
+  z-index: -100;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -190,6 +174,7 @@ const LinkedIn = styled(BsLinkedin)`
 `;
 
 const HomeHeading = styled.h2`
+  font-family: 'Space Grotesk', sans-serif;
   @media screen and (max-width: 349px) {
     margin-left: -5%;
   }
@@ -202,6 +187,8 @@ const HomeHeading = styled.h2`
 
 const HomeName = styled.h1`
   font-size: 3rem;
+  //font-family: 'Abhaya Libre', serif;
+  font-family: 'Space Grotesk', sans-serif;
 
   @media screen and (max-width: 349px) {
     font-size: 2rem;
@@ -215,6 +202,7 @@ const HomeName = styled.h1`
 
 const HomePara = styled.p`
   font-size: 1.1rem;
+  font-family: 'Space Grotesk', sans-serif;
 
   @media screen and (max-width: 349px) {
     font-size: 0.9rem;
@@ -231,20 +219,6 @@ const HomePara = styled.p`
 const Main = ({ themes }) => {
   return (
     <>
-      {/*<Nav>
-        <Link href="/" passHref>
-          <NavLink>
-            <HiOutlineArrowNarrowLeft
-              style={{ marginRight: "1rem", fontSize: "1.1rem" }}
-            />
-            Home{" "}
-            <HiOutlineArrowNarrowRight
-              style={{ marginLeft: "1rem", fontSize: "1.1rem" }}
-            />
-          </NavLink>
-        </Link>
-  </Nav>*/}
-
       <TwitterIcon>
         <Link href="https://twitter.com/AnisatAkinbani" passHref>
           <a>
@@ -284,7 +258,7 @@ const Main = ({ themes }) => {
               <HomeHeading>Hello 👋, my name is</HomeHeading>
               <HomeName>Anisat Ahmed</HomeName>
               <HomePara>
-                I'm a Frontend Engineer, Technical Writer and an Open Source
+                A Frontend Engineer, Technical Writer and an Open Source
                 Contributor.
               </HomePara>
             </div>

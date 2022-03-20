@@ -10,9 +10,12 @@ import { BsBoxArrowUpRight } from "react-icons/bs";
 
 const ProjectMain = styled.div`
   margin-top: 6.5rem;
-
+  font-family: 'Space Grotesk', sans-serif;
   @media screen and (max-width: 768px) {
-    margin-top: 5rem;
+    margin-top: 1.6rem;
+  }
+  @media screen and (max-width: 1024px) {
+    margin-top: 1.8rem;
   }
 `
 
@@ -94,7 +97,7 @@ export const ProjectData = [
   },
 ];
 
-const Project = () => {
+const Project = ({ themes }) => {
   return (
     <>
       <Head>
@@ -107,7 +110,7 @@ const Project = () => {
           projects<span>.</span>
         </ProjectHeading>
 
-        <ProjectSlider slides={ProjectData} />
+        <ProjectSlider slides={ProjectData} themes={themes} />
       </ProjectMain>
     </>
   );

@@ -16,7 +16,7 @@ const ProjectCardContainer = styled.div`
   height: 60vh;
   max-width: 98rem;
   padding: 0 1rem;
-  background-color: #fff;
+  background: ${({ theme }) => theme.cardBody};
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
@@ -48,6 +48,7 @@ const ProjectImage = styled.div`
   height: 18rem;
   transform: translateX(-10rem);
   position: relative;
+  z-index: -100;
 
   img {
     width: 100%;
@@ -240,8 +241,10 @@ const ArrowRight = styled.div`
   }
 `;
 
-const ProjectSlider = ({ slides }) => {
+const ProjectSlider = ({ slides, themes }) => {
   const [current, setCurrent] = useState(0);
+  const length = slides.length;
+  
   const nextSlide = () => {
     setCurrent(current === length - 1 ? 0 : current + 1);
   };
@@ -249,6 +252,10 @@ const ProjectSlider = ({ slides }) => {
   const prevSlide = () => {
     setCurrent(current === 0 ? length - 1 : current - 1);
   };
+
+  if (!Array.isArray(slides) || slides.length <= 0) {
+    return null;
+  }
 
   return (
     <>

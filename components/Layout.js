@@ -1,9 +1,10 @@
 import Navbar from "./Navbar";
 
-const Layout = ({ children, themes }) => {
+const Layout = ({ children, themes, icon }) => {
   return (
     <>
-      <Navbar themes= {themes} />
+      {/*<Navbar themes= {themes} icon={icon} />*/}
+      <Navbar themes={themes} icon={icon} />
       {children}
     </>
   );

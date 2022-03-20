@@ -6,27 +6,23 @@ import { MdArrowRightAlt } from "react-icons/md";
 import { BsBoxArrowUpRight } from "react-icons/bs";
 
 const ArticleContainer = styled.div`
-  //padding: 3rem 0.5rem;
-  //margin-top: -10rem;
-  //height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  font-family: 'Space Grotesk', sans-serif;
+  overflow-y: hidden;
 
   @media screen and (max-width: 349px) {
-    overflow-y: visible;
-    margin: 11rem 1.1rem 8rem;
+    margin: -0.5rem 1.1rem 8rem;
   }
 
   @media screen and (min-width: 350px) and (max-width: 767px) {
-    overflow-y: visible;
-    margin: 8rem 1.2rem 7rem;
+    margin: -1rem 1.2rem 7rem;
   }
 
   @media screen and (min-width: 768px) {
-    overflow-y: visible;
-    margin: 6rem 1.1rem 4rem;
+    margin: 0 1.1rem 4rem;
   }
 `;
 
@@ -39,13 +35,21 @@ const ArticleHeading = styled.h1`
     font-size: 2.1rem;
   }
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 349px) {
+    font-size: 1.4rem;
+  }
+
+  @media screen and (max-width: 768px) {
     font-size: 1.7rem;
   }
 `;
 
 const ArticleContentContainer = styled.div`
   margin-top: -10px;
+
+  @media screen and (max-width: 349px) {
+    margin-top: -20px;
+  }
 `;
 
 const ArticleContents = styled.div`
@@ -68,6 +72,10 @@ const ArticleTitle = styled.h1`
   font-size: 1.1rem;
   margin-right: 1.2rem;
 
+  @media screen and (max-width: 385px) {
+    font-size: 0.4rem;
+  }
+
   @media screen and (max-width: 767px) {
     font-size: 0.8rem;
   }
@@ -75,10 +83,18 @@ const ArticleTitle = styled.h1`
 
 const ArticleDate = styled.p`
   font-size: 0.8rem;
+
+  @media screen and (max-width: 385px) {
+    font-size: 0.5rem;
+  }
 `;
 
 const ArticleDescription = styled.p`
   font-size: 0.85rem;
+
+  @media screen and (max-width: 385px) {
+    font-size: 0.55rem;
+  }
 `;
 
 const ArticleLink = styled.div`

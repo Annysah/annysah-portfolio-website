@@ -12,9 +12,10 @@ const AboutContainer = styled.div`
   align-items: center;
   flex-direction: column;
   overflow-y: hidden;
+  font-family: 'Space Grotesk', sans-serif;
 
-  @media screen and (max-width: 349px) {
-    margin-top: 3rem;
+  @media screen and (max-width: 768px) {
+    margin-top: -3.2rem;
   }
 `;
 
@@ -45,7 +46,7 @@ const AboutContent = styled.div`
 
   @media screen and (max-width: 349px) {
     padding: 0 35px;
-    font-size: 1rem;
+    font-size: 0.8rem;
     margin-top: -1rem;
   }
 
