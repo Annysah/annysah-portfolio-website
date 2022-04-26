@@ -9,7 +9,7 @@ import {
   MdOutlineArrowForwardIos,
 } from "react-icons/md";
 
-import { BsGithub, BsBoxArrowUpRight } from "react-icons/bs";
+import { BsGithub, BsBoxArrowUpRight, BsArrowLeftCircle, BsArrowRightCircle } from "react-icons/bs";
 
 const ProjectWrapper = styled.div``;
 
@@ -29,6 +29,7 @@ const ProjectCardContainer = styled.div`
   @media screen and (max-width: 1024px) {
     //max-width: 80rem;
     width: 60%;
+    height: 40vh;
     margin: 4rem 17.2rem;
   }
 
@@ -36,17 +37,19 @@ const ProjectCardContainer = styled.div`
     width: 65%;
     margin: 3rem 8.5rem;
     flex-direction: column;
-    height: 62vh;
+    height: 45vh;
   }
 
   @media screen and (max-width: 425px) {
     width: 80%;
     margin: 3rem 2.5rem;
+    height: 62vh;
   }
 
   @media screen and (max-width: 349px) {
     width: 80%;
     margin: 3rem 2rem;
+    height: 62vh;
   }
 `;
 
@@ -231,15 +234,21 @@ const ArrowLeft = styled.div`
   cursor: pointer;
   user-select: none;
 
+  @media screen and (max-width: 1024px) {
+    top: 50%;
+    left: 5%;
+  }
+
   @media screen and (max-width: 768px) {
+    left: 10%;
+  }
+
+  @media screen and (max-width: 425px) {
     left: 3%;
     font-size: 1.2rem;
   }
-
-  /*@media screen and (min-width: 768px) and (max-width: 990px) {
-    font-size: 1.2rem;
-  }*/
 `;
+
 const ArrowRight = styled.div`
   position: absolute;
   top: 55%;
@@ -249,24 +258,19 @@ const ArrowRight = styled.div`
   cursor: pointer;
   user-select: none;
 
-  /*@media screen and (max-width: 349px) {
-    right: -5%;
-    font-size: 1rem;
-  }*/
+  @media screen and (max-width: 1024px) {
+    top: 50%;
+    right: 5%;
+  }
 
   @media screen and (max-width: 768px) {
+    right: 10%;
+  }
+
+  @media screen and (max-width: 425px) {
     right: 3%;
     font-size: 1.2rem;
   }
-
-  /*@media screen and (min-width: 768px) and (max-width: 1023px) {
-    right: 8%;
-    font-size: 1.2rem;
-  }
-
-  @media screen and (min-width: 1024px) and (max-width: 1068px) {
-    right: 8%;
-  }*/
 `;
 
 const ProjectSlider = ({ slides, themes }) => {
@@ -288,11 +292,13 @@ const ProjectSlider = ({ slides, themes }) => {
   return (
     <>
       <ArrowLeft>
-        <MdOutlineArrowBackIos className="left-arrow" onClick={prevSlide} />
+        <BsArrowLeftCircle className="left-arrow" onClick={prevSlide} />
       </ArrowLeft>
+
       <ArrowRight>
-        <MdOutlineArrowForwardIos className="right-arrow" onClick={nextSlide} />
+        <BsArrowRightCircle className="right-arrow" onClick={nextSlide} />
       </ArrowRight>
+
       {slides.map((slide, index) => {
         return (
           <div key={index}>

@@ -27,8 +27,13 @@ const LayoutContainer = styled.div`
   }
 
   @media screen and (min-width: 768px) and (max-width: 990px) {
-    margin-left: 3%;
-    margin-top: 9rem;
+    margin-left: -24%;
+    margin-top: 12rem;
+  }
+
+  @media screen and (min-width: 991px) and (max-width: 1024px) {
+    margin-top: 15rem;
+    margin-left: -40%;
   }
 `;
 
@@ -42,7 +47,7 @@ const ResumeLink = styled.div`
   padding: 12px 16px;
   width: 160px;
   margin-top: 2.5rem;
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: "Space Grotesk", sans-serif;
 
   @media screen and (min-width: 350px) and (max-width: 767px) {
     margin-left: 5%;
@@ -59,10 +64,15 @@ const BigCircle = styled.div`
   right: 5%;
   z-index: -100;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1024px) {
+    width: 450px;
+    height: 450px;
+  }
+
+  @media screen and (max-width: 768px) {
     display: none;
   }
-`
+`;
 
 const MidCircle = styled.div`
   width: 300px;
@@ -74,11 +84,17 @@ const MidCircle = styled.div`
   right: 12%;
   z-index: -100;
 
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    width: 250px;
+    height: 250px;
+    top: 28%;
+    right: 14%;
+  }
+
   @media screen and (max-width: 767px) {
     display: none;
   }
-`
-
+`;
 
 const TwitterIcon = styled.div`
   background-color: #c9eefb;
@@ -92,6 +108,10 @@ const TwitterIcon = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    top: 18%;
+  }
 
   @media screen and (max-width: 767px) {
     width: 0px;
@@ -124,6 +144,10 @@ const GithubIcon = styled.div`
   align-items: center;
   justify-content: center;
 
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    top: 35%;
+  }
+
   @media screen and (max-width: 767px) {
     width: 0px;
     height: 0px;
@@ -155,6 +179,11 @@ const GmailIcon = styled.div`
   align-items: center;
   justify-content: center;
 
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    top: 46%;
+    right: 19%;
+  }
+
   @media screen and (max-width: 767px) {
     width: 0px;
     height: 0px;
@@ -185,6 +214,10 @@ const LinkedInIcon = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    top: 55%;
+  }
 
   @media screen and (max-width: 767px) {
     width: 0px;
@@ -219,8 +252,7 @@ const HomeHeading = styled.p`
 
 const HomeName = styled.h1`
   font-size: 3.5rem;
-  //font-family: 'Abhaya Libre', serif;
-  //font-family: 'Space Grotesk', sans-serif;
+
 
   @media screen and (max-width: 349px) {
     font-size: 2rem;
@@ -230,11 +262,14 @@ const HomeName = styled.h1`
     font-size: 2.5rem;
     padding: 0 1rem;
   }
+
+  @media screen and (max-width: 1024px) {
+    font-size: 3rem;
+  }
 `;
 
 const HomePara = styled.p`
   font-size: 1.2rem;
-  //font-family: 'Space Grotesk', sans-serif;
 
   @media screen and (max-width: 349px) {
     font-size: 0.9rem;
@@ -245,6 +280,11 @@ const HomePara = styled.p`
     font-size: 1rem;
     padding: 0 1rem;
     line-height: 30px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    width: 360px;
+    line-height: 2;
   }
 `;
 

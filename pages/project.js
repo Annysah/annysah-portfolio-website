@@ -1,17 +1,23 @@
 import styled from "styled-components";
 import Head from "next/head";
-import Link from "next/link";
-import Image from "next/image";
 
 import { data } from "../data/data";
 import ProjectSlider from "../components/ProjectSlider";
 
 const ProjectMain = styled.div`
-  margin-top: 5.5rem;
+  margin-top: 6.5rem;
   font-family: 'Space Grotesk', sans-serif;
 
+  @media screen and (max-width: 1024px) {
+    margin-top: 14rem;
+  }
+
   @media screen and (max-width: 768px) {
-    margin-top: 5rem;
+    margin-top: 10rem;
+  }
+
+  @media screen and (max-width: 425px) {
+    margin-top: 5.2rem;
   }
 
 `
