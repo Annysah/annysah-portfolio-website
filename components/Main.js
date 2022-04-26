@@ -9,8 +9,8 @@ import { SiGmail } from "react-icons/si";
 
 const LayoutContainer = styled.div`
   padding: 0 0.5rem;
-  margin-top: 12rem;
-  margin-left: -11%;
+  margin-top: 12.5rem;
+  margin-left: -32%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -18,7 +18,7 @@ const LayoutContainer = styled.div`
 
   @media screen and (max-width: 349px) {
     margin-left: 17%;
-    margin-top: 5rem;
+    margin-top: 9rem;
   }
 
   @media screen and (min-width: 350px) and (max-width: 767px) {
@@ -28,7 +28,7 @@ const LayoutContainer = styled.div`
 
   @media screen and (min-width: 768px) and (max-width: 990px) {
     margin-left: 3%;
-    margin-top: 6rem;
+    margin-top: 9rem;
   }
 `;
 
@@ -49,13 +49,44 @@ const ResumeLink = styled.div`
   }
 `;
 
+const BigCircle = styled.div`
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  position: absolute;
+  top: 19%;
+  right: 5%;
+  z-index: -100;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+`
+
+const MidCircle = styled.div`
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  position: absolute;
+  top: 34%;
+  right: 12%;
+  z-index: -100;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+`
+
+
 const TwitterIcon = styled.div`
   background-color: #c9eefb;
   width: 120px;
   height: 120px;
   border-radius: 50%;
   position: absolute;
-  top: 24%;
+  top: 22%;
   right: 30%;
   z-index: -100;
   display: flex;
@@ -117,7 +148,7 @@ const GmailIcon = styled.div`
   height: 60px;
   border-radius: 50%;
   position: absolute;
-  top: 75%;
+  top: 72%;
   right: 15%;
   z-index: -100;
   display: flex;
@@ -148,7 +179,7 @@ const LinkedInIcon = styled.div`
   height: 70px;
   border-radius: 50%;
   position: absolute;
-  top: 80%;
+  top: 84%;
   right: 30%;
   z-index: -100;
   display: flex;
@@ -173,8 +204,9 @@ const LinkedIn = styled(BsLinkedin)`
   }
 `;
 
-const HomeHeading = styled.h2`
-  font-family: 'Space Grotesk', sans-serif;
+const HomeHeading = styled.p`
+  font-size: 1.3rem;
+  //font-family: 'Space Grotesk', sans-serif;
   @media screen and (max-width: 349px) {
     margin-left: -5%;
   }
@@ -186,9 +218,9 @@ const HomeHeading = styled.h2`
 `;
 
 const HomeName = styled.h1`
-  font-size: 3rem;
+  font-size: 3.5rem;
   //font-family: 'Abhaya Libre', serif;
-  font-family: 'Space Grotesk', sans-serif;
+  //font-family: 'Space Grotesk', sans-serif;
 
   @media screen and (max-width: 349px) {
     font-size: 2rem;
@@ -201,8 +233,8 @@ const HomeName = styled.h1`
 `;
 
 const HomePara = styled.p`
-  font-size: 1.1rem;
-  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.2rem;
+  //font-family: 'Space Grotesk', sans-serif;
 
   @media screen and (max-width: 349px) {
     font-size: 0.9rem;
@@ -219,6 +251,8 @@ const HomePara = styled.p`
 const Main = ({ themes }) => {
   return (
     <>
+      <BigCircle />
+      <MidCircle />
       <TwitterIcon>
         <Link href="https://twitter.com/AnisatAkinbani" passHref>
           <a>

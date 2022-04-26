@@ -11,14 +11,14 @@ const ArticleContainer = styled.div`
   align-items: center;
   flex-direction: column;
   font-family: 'Space Grotesk', sans-serif;
-  overflow-y: hidden;
+  height: 100vh;
 
   @media screen and (max-width: 349px) {
-    margin: -0.5rem 1.1rem 8rem;
+    margin: 1rem 1.1rem 8rem;
   }
 
   @media screen and (min-width: 350px) and (max-width: 767px) {
-    margin: -1rem 1.2rem 7rem;
+    margin: 1rem 1.2rem 7rem;
   }
 
   @media screen and (min-width: 768px) {
@@ -31,7 +31,7 @@ const ArticleHeading = styled.h1`
   font-weight: 900;
 
   span {
-    color: #f9af14;
+    color: #f4ff69;
     font-size: 2.1rem;
   }
 

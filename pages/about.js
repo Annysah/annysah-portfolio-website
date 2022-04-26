@@ -6,17 +6,13 @@ import photo from "../images/aboutphoto.jpg";
 
 const AboutContainer = styled.div`
   padding: 3rem 0.5rem;
-  margin-top: 4rem;
+  margin-top: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  overflow-y: hidden;
   font-family: 'Space Grotesk', sans-serif;
 
-  @media screen and (max-width: 768px) {
-    margin-top: -3.2rem;
-  }
 `;
 
 const AboutHeading = styled.div`
@@ -27,7 +23,7 @@ const AboutHeading = styled.div`
   }
 
   span {
-    color: #f9af14;
+    color: #f4ff69;
   }
 
   @media screen and (max-width: 767px) {

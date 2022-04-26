@@ -6,7 +6,6 @@ const NavbarLinkContainer = styled.div`
   //flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
-  font-family: "Space Grotesk", sans-serif;
 
   @media (max-width: 768px) {
     flex-flow: column nowrap;
@@ -18,6 +17,7 @@ const NavbarLinkContainer = styled.div`
     height: 100vh;
     width: 260px;
     transition: transform 0.3s ease-in-out;
+    z-index: -1;
   }
 `;
 
@@ -32,7 +32,10 @@ const StyledLink = styled.a`
   }*/
 
   span {
-    color: #f9af14;
+    //color: #f9af14;
+    color: #f4ff69;
+    font-size: 20px;
+    font-weight: bolder;
   }
 
   &:focus {

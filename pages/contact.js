@@ -7,19 +7,24 @@ import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 import { BiLink } from "react-icons/bi";
 
 const ContactContainer = styled.div`
-  margin-top: 2rem;
+  margin-top: -3rem;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   font-family: 'Space Grotesk', sans-serif;
+  height: 100vh;
 
-  @media screen and (max-width: 767px) {
-    margin-top: 1rem;
+  @media screen and (max-width: 349px) {
+    margin: 1rem 1.1rem 8rem;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1024px) {
-    margin-top: 1rem;
+  @media screen and (min-width: 350px) and (max-width: 767px) {
+    margin: 1rem 1.2rem 7rem;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin: 0 1.1rem 4rem;
   }
 `;
 
@@ -28,7 +33,15 @@ const ContactHeading = styled.h1`
   font-weight: 900;
 
   span {
-    color: #f9af14;
+    color: #f4ff69;
+  }
+
+  @media screen and (max-width: 349px) {
+    font-size: 1.4rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 1.7rem;
   }
   
 `;
@@ -39,6 +52,10 @@ const ContactContent = styled.div`
   padding: 0 3rem;
   line-height: 2;
   margin-top: -2rem;
+
+  @media screen and (max-width: 349px) {
+    margin-top: -20px;
+  }
 
   @media screen and (max-width: 767px) {
     //padding: 0 4rem;

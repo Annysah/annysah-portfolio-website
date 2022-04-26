@@ -9,6 +9,8 @@ import {
   MdOutlineArrowForwardIos,
 } from "react-icons/md";
 
+import { BsGithub, BsBoxArrowUpRight } from "react-icons/bs";
+
 const ProjectWrapper = styled.div``;
 
 const ProjectCardContainer = styled.div`
@@ -22,6 +24,7 @@ const ProjectCardContainer = styled.div`
   align-items: center;
   margin: 2rem 23rem;
   border-radius: 0.8rem;
+  z-index: -100;
 
   @media screen and (max-width: 1024px) {
     //max-width: 80rem;
@@ -30,15 +33,20 @@ const ProjectCardContainer = styled.div`
   }
 
   @media screen and (max-width: 768px) {
-    width: 70%;
-    margin: 2rem 4.5rem;
+    width: 65%;
+    margin: 3rem 8.5rem;
     flex-direction: column;
     height: 62vh;
   }
 
-  @media screen and (max-width: 380px) {
+  @media screen and (max-width: 425px) {
     width: 80%;
     margin: 3rem 2.5rem;
+  }
+
+  @media screen and (max-width: 349px) {
+    width: 80%;
+    margin: 3rem 2rem;
   }
 `;
 
@@ -48,7 +56,6 @@ const ProjectImage = styled.div`
   height: 18rem;
   transform: translateX(-10rem);
   position: relative;
-  z-index: -100;
 
   img {
     width: 100%;
@@ -85,9 +92,11 @@ const ProjectImage = styled.div`
     height: 8rem;
   }
 `;
+
 const ProjectCardContent = styled.div`
-  margin-left: -5rem;
-  padding: 0 2rem;
+  margin-left: -7rem;
+  padding: 0 2.5rem;
+  font-family: "Space Grotesk", sans-serif;
 
   @media screen and (max-width: 1024px) {
     margin-left: -8rem;
@@ -106,7 +115,6 @@ const ProjectCardContent = styled.div`
 const ProjectTitle = styled.h2`
   font-size: 1.5rem;
   font-weight: 900;
-  text-transform: uppercase;
 
   @media screen and (max-width: 768px) {
     font-size: 1.1rem;
@@ -207,11 +215,11 @@ const CodeLink = styled.div`
     padding: 10px 0px;
     width: 120px;
   }
-  
+
   @media screen and (max-width: 768px) {
     //padding: 10px 8px;
     width: 28vw;
-  } 
+  }
 `;
 
 const ArrowLeft = styled.div`
@@ -223,9 +231,14 @@ const ArrowLeft = styled.div`
   cursor: pointer;
   user-select: none;
 
-  @media screen and (max-width: 1068px) {
-    display: none;
+  @media screen and (max-width: 768px) {
+    left: 3%;
+    font-size: 1.2rem;
   }
+
+  /*@media screen and (min-width: 768px) and (max-width: 990px) {
+    font-size: 1.2rem;
+  }*/
 `;
 const ArrowRight = styled.div`
   position: absolute;
@@ -236,15 +249,30 @@ const ArrowRight = styled.div`
   cursor: pointer;
   user-select: none;
 
-  @media screen and (max-width: 1068px) {
-    display: none;
+  /*@media screen and (max-width: 349px) {
+    right: -5%;
+    font-size: 1rem;
+  }*/
+
+  @media screen and (max-width: 768px) {
+    right: 3%;
+    font-size: 1.2rem;
   }
+
+  /*@media screen and (min-width: 768px) and (max-width: 1023px) {
+    right: 8%;
+    font-size: 1.2rem;
+  }
+
+  @media screen and (min-width: 1024px) and (max-width: 1068px) {
+    right: 8%;
+  }*/
 `;
 
 const ProjectSlider = ({ slides, themes }) => {
   const [current, setCurrent] = useState(0);
   const length = slides.length;
-  
+
   const nextSlide = () => {
     setCurrent(current === length - 1 ? 0 : current + 1);
   };
@@ -289,7 +317,10 @@ const ProjectSlider = ({ slides, themes }) => {
                       <Link href="/" passHref>
                         <CodeLink>
                           <a>Source Code</a>
-                          <p>{slide.iconGithub}</p>
+                          {/*<p>{slide.iconGithub}</p>*/}
+                          <p>
+                            <BsGithub />
+                          </p>
                         </CodeLink>
                       </Link>
                     </ProjectCodeDiv>
@@ -297,7 +328,10 @@ const ProjectSlider = ({ slides, themes }) => {
                       <Link href="/" passHref>
                         <CodeLink>
                           <a>View Demo</a>
-                          <p>{slide.iconArrow}</p>
+                          {/*<p>{slide.iconArrow}</p>*/}
+                          <p>
+                            <BsBoxArrowUpRight />
+                          </p>
                         </CodeLink>
                       </Link>
                     </ProjectCodeDiv>

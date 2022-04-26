@@ -1,8 +1,8 @@
 import { createGlobalStyle } from "styled-components";
 
 export const lightTheme = {
-  body: "#fcfcfc",
-  //body: "#fff",
+  //body: "linear-gradient(15deg, #eeeeee, #faf8f9, #ffffff)",
+  body: "#fff",
   fontColor: "#000000",
   navFontColor: "#fff",
   navBodyColor: "#000",
@@ -32,11 +32,12 @@ body {
    background: ${({ theme }) => theme.body};
    color: ${({ theme }) => theme.fontColor};
    //font-family: 'Space Grotesk', sans-serif; 
+   font-family: 'Nunito', sans-serif;
    font-weight: 400;
    font-style: normal;
    transition: all 0.50s linear;
    width: 100%;
-   height: 100%;
+   height: 100vh;
    overflow: hidden;
 }
 

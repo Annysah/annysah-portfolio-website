@@ -15,7 +15,7 @@ import {
 } from "react-icons/si";
 
 const StackContainer = styled.div`
-  margin-top: 1rem;
+  margin-top: 4rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -33,7 +33,7 @@ const StackHeading = styled.h1`
   font-weight: 900;
 
   span {
-    color: #f9af14;
+    color: #f4ff69;
   }
 
   @media screen and (max-width: 767px) {
