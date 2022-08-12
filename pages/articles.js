@@ -10,7 +10,7 @@ const ArticleContainer = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   height: 100vh;
 
   @media screen and (max-width: 349px) {
@@ -31,7 +31,7 @@ const ArticleHeading = styled.h1`
   font-weight: 900;
 
   span {
-    color: #f4ff69;
+    color: #f9af14;
     font-size: 2.1rem;
   }
 
@@ -110,7 +110,7 @@ const ArticleLink = styled.div`
 
 const ArticleArrow = styled.div`
   color: ${({ theme }) => theme.fontColor};
-`
+`;
 
 const Articles = ({ themes }) => {
   return (
@@ -127,11 +127,9 @@ const Articles = ({ themes }) => {
         <ArticleContentContainer>
           <ArticleContents>
             <ArticleContentTop>
-              <ArticleTitle>
-                GraphQL API Requests with React, Typescript and GraphQL Codegen
-              </ArticleTitle>
+              <ArticleTitle>What's New in React 18</ArticleTitle>
               <Link
-                href="https://annysah.hashnode.dev/graphql-api-requests-with-typescript-react-query-and-graphql-code-generator-ckxx799pp045du4s1fdvyacj5"
+                href="https://annysah.hashnode.dev/whats-new-in-react-18-cl47byk93006x8mnv6t346j04"
                 passHref
               >
                 <ArticleArrow>
@@ -141,10 +139,10 @@ const Articles = ({ themes }) => {
                 </ArticleArrow>
               </Link>
             </ArticleContentTop>
-            <ArticleDate>January, 2022</ArticleDate>
+            <ArticleDate>June, 2022</ArticleDate>
             <ArticleDescription>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum
-              bibendum nisi adipiscing odio.
+              React 18 consists of some cool new features added to the
+              open-source JavaScript library.
             </ArticleDescription>
           </ArticleContents>
 
@@ -174,11 +172,11 @@ const Articles = ({ themes }) => {
           <ArticleContents>
             <ArticleContentTop>
               <ArticleTitle>
-                Build a Sidebar Menu with React, Typescript and Styled
-                Components
+                GraphQL API Requests with Typescript, React Query & GraphQL Code
+                Generator
               </ArticleTitle>
               <Link
-                href="https://annysah.hashnode.dev/build-a-sidebar-menu-with-react-typescript-and-styled-components-ckwkykpm80hs7gns112nycvvy"
+                href="https://annysah.hashnode.dev/graphql-api-requests-with-typescript-react-query-and-graphql-code-generator-ckxx799pp045du4s1fdvyacj5"
                 passHref
               >
                 <ArticleArrow>
@@ -188,10 +186,10 @@ const Articles = ({ themes }) => {
                 </ArticleArrow>
               </Link>
             </ArticleContentTop>
-            <ArticleDate>November, 2021</ArticleDate>
+            <ArticleDate>January, 2022</ArticleDate>
             <ArticleDescription>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum
-              bibendum nisi adipiscing odio.
+              Learn how to make GraphQL requests in React with React Query,
+              Typescript(TS) and GraphQL Code Generator.
             </ArticleDescription>
           </ArticleContents>
         </ArticleContentContainer>

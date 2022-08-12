@@ -19,12 +19,17 @@ const Nav = styled.nav`
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  /*box-shadow: 0px 1px 2px 0px rgba(0,255,255,0.7),
+            1px 2px 4px 0px rgba(0,255,255,0.7),
+            2px 4px 8px 0px rgba(0,255,255,0.7),
+            2px 4px 16px 0px rgba(0,255,255,0.7);*/
 
-  /*.logo {
+  .logo {
     padding: 15px 0;
+    margin-left: 5.8rem;
     //font-family: "Sacramento", cursive;
     font-size: 1.6rem;
-  }*/
+  }
 `;
 
 /*const LogoImage = styled.img`
@@ -35,7 +40,7 @@ const Nav = styled.nav`
 
 const ImageWrapper = styled.div`
   margin-left: 7%;
-`
+`;
 
 const NavThemeSwitch = styled.div`
   margin-right: 7%;
@@ -52,10 +57,9 @@ const Navbar = ({ themes, icon }) => {
 
   return (
     <Nav>
-      {/*<div className="logo">Annysah</div>
-      <img src='https://res.cloudinary.com/annysah/image/upload/v1650988944/portfolio/annysah-removebg-preview_qgtzyz.png' alt="" />*/}
+      <div className="logo">Annysah</div>
 
-      <ImageWrapper>
+      {/*<ImageWrapper>
         <Image
           src={
             "https://res.cloudinary.com/annysah/image/upload/v1650998817/portfolio/Group_2_wok4zy.png"
@@ -64,7 +68,7 @@ const Navbar = ({ themes, icon }) => {
           height={50}
           quality={70}
         />
-      </ImageWrapper>
+        </ImageWrapper>*/}
 
       <Burger themes={themes} icon={icon} />
 

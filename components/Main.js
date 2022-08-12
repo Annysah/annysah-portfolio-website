@@ -58,7 +58,7 @@ const BigCircle = styled.div`
   width: 500px;
   height: 500px;
   border-radius: 50%;
-  border: 1px solid #ccc;
+  border: 0.5px solid #ebecf0;
   position: absolute;
   top: 19%;
   right: 5%;
@@ -78,7 +78,7 @@ const MidCircle = styled.div`
   width: 300px;
   height: 300px;
   border-radius: 50%;
-  border: 1px solid #ccc;
+  border: 0.5px solid #ebecf0;
   position: absolute;
   top: 34%;
   right: 12%;

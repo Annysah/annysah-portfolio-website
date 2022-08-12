@@ -11,8 +11,7 @@ const AboutContainer = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-family: 'Space Grotesk', sans-serif;
-
+  font-family: "Space Grotesk", sans-serif;
 `;
 
 const AboutHeading = styled.div`
@@ -23,7 +22,7 @@ const AboutHeading = styled.div`
   }
 
   span {
-    color: #f4ff69;
+    color: #f9af14;
   }
 
   @media screen and (max-width: 767px) {
@@ -55,7 +54,6 @@ const AboutContent = styled.div`
     padding: 0 5rem;
     font-size: 1.3rem;
   }
-  
 `;
 
 const About = () => {
@@ -68,18 +66,27 @@ const About = () => {
 
       <AboutContainer>
         <AboutHeading>
-          <h1>about me<span>.</span></h1>
+          <h1>
+            about me<span>.</span>
+          </h1>
         </AboutHeading>
         <AboutContent>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum
-            bibendum nisi adipiscing odio. Nisl tortor adipiscing sit felis
-            tempus amet. Iaculis quam nulla sem odio bibendum.
+            Hello, my name is Anisat Ahmed, and I'm a front-end engineer and
+            technical writer based in Lagos, Nigeria. I like creating clean,
+            simple, and intuitive user interfaces for websites and web apps
+            mostly with ReactJS.
+          </p>
+
+          <p>
+            I enjoy learning new things a lot, and I'm currently exploring
+            technologies like SQL, Python, and NextJS. In my spare time, I
+            contribute to open source projects, particularly in the area of
+            technical documentation.
           </p>
           <p>
-            Dolor morbi volutpat quis quis a, platea. Egestas tellus hac aenean
-            in bibendum id. Adipiscing proin vehicula auctor nibh ut vestibulum
-            elit, vel suscipit.
+            When I'm not coding, I enjoy going for walks on the beach and
+            binge-watching videos on YouTube from my favorite content creators.
           </p>
         </AboutContent>
       </AboutContainer>

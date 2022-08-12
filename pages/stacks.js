@@ -20,7 +20,7 @@ const StackContainer = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-family: 'Space Grotesk', sans-serif;
+  //font-family: 'Space Grotesk', sans-serif;
 
   @media screen and (max-width: 768px) {
     margin-top: -0.5rem;
@@ -33,7 +33,7 @@ const StackHeading = styled.h1`
   font-weight: 900;
 
   span {
-    color: #f4ff69;
+    color: #f9af14;
   }
 
   @media screen and (max-width: 767px) {

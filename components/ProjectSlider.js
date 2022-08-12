@@ -1,15 +1,14 @@
 import { useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
 
 import styled from "styled-components";
 
 import {
-  MdOutlineArrowBackIos,
-  MdOutlineArrowForwardIos,
-} from "react-icons/md";
-
-import { BsGithub, BsBoxArrowUpRight, BsArrowLeftCircle, BsArrowRightCircle } from "react-icons/bs";
+  BsGithub,
+  BsBoxArrowUpRight,
+  BsArrowLeftCircle,
+  BsArrowRightCircle,
+} from "react-icons/bs";
 
 const ProjectWrapper = styled.div``;
 
@@ -33,7 +32,7 @@ const ProjectCardContainer = styled.div`
     margin: 4rem 17.2rem;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 820px) {
     width: 65%;
     margin: 3rem 8.5rem;
     flex-direction: column;
@@ -65,21 +64,6 @@ const ProjectImage = styled.div`
     height: 100%;
     object-fit: cover;
     display: block;
-    border-radius: 0.8rem;
-  }
-
-  &:before {
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: linear-gradient(
-      to right,
-      rgba(253, 175, 20, 0.7),
-      rgba(0, 242, 254, 0.3)
-    );
     border-radius: 0.8rem;
   }
 
@@ -312,15 +296,11 @@ const ProjectSlider = ({ slides, themes }) => {
                   <ProjectTitle>{slide.title}</ProjectTitle>
                   <ProjectDescription>{slide.description}</ProjectDescription>
                   <ProjectStacks>
-                    <ul>
-                      <li>React</li>
-                      <li>Tailwind css</li>
-                      <li>Tensei</li>
-                    </ul>
+                    <p>Stacks: {slide.stack}</p>
                   </ProjectStacks>
                   <ProjectCode>
                     <ProjectCodeDiv>
-                      <Link href="/" passHref>
+                      <Link href={`${slide.source}`} passHref>
                         <CodeLink>
                           <a>Source Code</a>
                           {/*<p>{slide.iconGithub}</p>*/}
@@ -331,7 +311,7 @@ const ProjectSlider = ({ slides, themes }) => {
                       </Link>
                     </ProjectCodeDiv>
                     <ProjectCodeDiv>
-                      <Link href="/" passHref>
+                      <Link href={`${slide.demo}`} passHref>
                         <CodeLink>
                           <a>View Demo</a>
                           {/*<p>{slide.iconArrow}</p>*/}

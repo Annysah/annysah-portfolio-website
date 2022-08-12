@@ -6,7 +6,7 @@ import ProjectSlider from "../components/ProjectSlider";
 
 const ProjectMain = styled.div`
   margin-top: 6.5rem;
-  font-family: 'Space Grotesk', sans-serif;
+  //font-family: 'Space Grotesk', sans-serif;
 
   @media screen and (max-width: 1024px) {
     margin-top: 14rem;
@@ -30,7 +30,7 @@ const ProjectHeading = styled.h1`
   margin: 0 0 1rem 0;
 
   span {
-    color: #f4ff69;
+    color: #f9af14;
   }
 
   @media screen and (max-width: 768px) {

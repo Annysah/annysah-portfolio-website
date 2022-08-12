@@ -33,7 +33,7 @@ const ContactHeading = styled.h1`
   font-weight: 900;
 
   span {
-    color: #f4ff69;
+    color: #f9af14;
   }
 
   @media screen and (max-width: 349px) {

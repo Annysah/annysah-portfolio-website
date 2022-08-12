@@ -32,8 +32,7 @@ const StyledLink = styled.a`
   }*/
 
   span {
-    //color: #f9af14;
-    color: #f4ff69;
+    color: #f9af14;
     font-size: 20px;
     font-weight: bolder;
   }
