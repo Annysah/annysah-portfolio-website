@@ -124,6 +124,7 @@ const TwitterIcon = styled.div`
 const Twitter = styled(BsTwitter)`
   color: #ffffff;
   font-size: 2.3rem;
+  cursor: pointer;
 
   @media screen and (max-width: 767px) {
     color: #1da1f2;
@@ -159,6 +160,7 @@ const GithubIcon = styled.div`
 const Github = styled(BsGithub)`
   color: #ffffff;
   font-size: 2.3rem;
+  cursor: pointer;
 
   @media screen and (max-width: 767px) {
     color: #000;
@@ -195,6 +197,7 @@ const GmailIcon = styled.div`
 const Gmail = styled(SiGmail)`
   color: #dc3e34;
   font-size: 1.4rem;
+  cursor: pointer;
 
   @media screen and (max-width: 767px) {
     color: #db4437;
@@ -215,6 +218,7 @@ const LinkedInIcon = styled.div`
   align-items: center;
   justify-content: center;
 
+
   @media screen and (min-width: 768px) and (max-width: 1024px) {
     top: 55%;
   }
@@ -230,6 +234,7 @@ const LinkedInIcon = styled.div`
 const LinkedIn = styled(BsLinkedin)`
   color: #fff;
   font-size: 1.6rem;
+  cursor: pointer;
 
   @media screen and (max-width: 767px) {
     color: #0077b5;
@@ -310,7 +315,7 @@ const Main = ({ themes }) => {
       </GithubIcon>
 
       <GmailIcon>
-        <Link href="https://anisatakinbani13@gmail.com">
+        <Link href="https://anisatakinbani13@gmail.com" passHref>
           <a>
             <Gmail />
           </a>
@@ -318,7 +323,7 @@ const Main = ({ themes }) => {
       </GmailIcon>
 
       <LinkedInIcon>
-        <Link href="https://linkedin.com/in/anisatakinbani">
+        <Link href="https://linkedin.com/in/anisatakinbani" passHref>
           <a>
             <LinkedIn />
           </a>
@@ -339,7 +344,7 @@ const Main = ({ themes }) => {
 
             <div>
               <Link
-                href="https://drive.google.com/file/d/11y65SCBjSwFv7Vd4OrJFOA1xFrhlhCIr/view?usp=sharing"
+                href="https://drive.google.com/file/d/14vArcPQxd7vQ1SL7UZd-i1cEKLNb2E8H/view?usp=sharing"
                 passHref
               >
                 <ResumeLink>

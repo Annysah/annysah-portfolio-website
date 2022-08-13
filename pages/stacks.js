@@ -15,7 +15,7 @@ import {
 } from "react-icons/si";
 
 const StackContainer = styled.div`
-  margin-top: 4rem;
+  margin-top: 6rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,7 +23,7 @@ const StackContainer = styled.div`
   //font-family: 'Space Grotesk', sans-serif;
 
   @media screen and (max-width: 768px) {
-    margin-top: -0.5rem;
+    margin-top: 4.5rem;
   }
 
 `;

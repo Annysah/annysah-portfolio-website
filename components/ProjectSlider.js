@@ -59,6 +59,7 @@ const ProjectImage = styled.div`
   height: 18rem;
   transform: translateX(-10rem);
   position: relative;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.24);
 
   img {
     width: 100%;

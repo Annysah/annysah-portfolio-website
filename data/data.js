@@ -44,7 +44,7 @@ export const data = [
     title: "Annysah Portfolio Website",
     description: "My portfolio website showcasing some of my personal projects.",
     source: "https://github.com/Annysah/annysah-portfolio-website",
-    demo: "",
+    demo: "https://annysah-portfolio.vercel.app/",
     stack: "NextJS, Styled Components, Cloudinary"
   }
 ]
