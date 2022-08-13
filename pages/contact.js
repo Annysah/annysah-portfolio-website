@@ -90,7 +90,7 @@ const Contact = ({ themes }) => {
         </ContactHeading>
         <ContactContent>
           <p>
-            Have an opportunity for me? I'd be glad to have a conversation about
+            Have an opportunity for me? I&apos;d be glad to have a conversation about
             it.{" "}
           </p>
           <p>

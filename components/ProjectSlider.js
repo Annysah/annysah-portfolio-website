@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Link from "next/link";
+import Image from 'next/image';
 
 import styled from "styled-components";
 
@@ -289,7 +290,7 @@ const ProjectSlider = ({ slides, themes }) => {
             {index === current ? (
               <ProjectCardContainer>
                 <ProjectImage>
-                  <img src={slide.image} alt="Project Images" />
+                  <Image src={slide.image} alt="Project Images" layout="fill" />
                 </ProjectImage>
 
                 <ProjectCardContent>

@@ -127,7 +127,7 @@ const Articles = ({ themes }) => {
         <ArticleContentContainer>
           <ArticleContents>
             <ArticleContentTop>
-              <ArticleTitle>What's New in React 18</ArticleTitle>
+              <ArticleTitle>What&apos;s New in React 18</ArticleTitle>
               <Link
                 href="https://annysah.hashnode.dev/whats-new-in-react-18-cl47byk93006x8mnv6t346j04"
                 passHref
