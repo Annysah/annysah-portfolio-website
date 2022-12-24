@@ -79,8 +79,7 @@ const About = () => {
           </p>
 
           <p>
-            I enjoy learning new things a lot, and I am currently exploring
-            technologies like SQL, Python, and NextJS. In my spare time, I
+            I enjoy learning new things a lot. In my spare time, I
             contribute to open source projects, particularly in the area of
             technical documentation.
           </p>
