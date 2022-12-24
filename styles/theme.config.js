@@ -2,7 +2,7 @@ import { createGlobalStyle } from "styled-components";
 
 export const lightTheme = {
   //body: "linear-gradient(15deg, #eeeeee, #faf8f9, #ffffff)",
-  body: "#fff",
+  body: "#fefaf7",
   fontColor: "#000000",
   navFontColor: "#fff",
   navBodyColor: "#000",
