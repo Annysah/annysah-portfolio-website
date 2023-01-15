@@ -33,7 +33,7 @@ const StackHeading = styled.h1`
   font-weight: 900;
 
   span {
-    color: #f9af14;
+    color: #ffec4e;
   }
 
   @media screen and (max-width: 767px) {
@@ -150,7 +150,7 @@ const Stacks = () => {
 
       <StackContainer>
         <StackHeading>
-          stacks<span>.</span>
+          stacks{/*<span>.</span>*/}
         </StackHeading>
 
         <StackContentContainer>

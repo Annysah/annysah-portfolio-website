@@ -31,7 +31,7 @@ const ArticleHeading = styled.h1`
   font-weight: 900;
 
   span {
-    color: #f9af14;
+    color: #ffec4e;
     font-size: 2.1rem;
   }
 
@@ -121,7 +121,7 @@ const Articles = ({ themes }) => {
 
       <ArticleContainer>
         <ArticleHeading>
-          articles<span>.</span>
+          articles{/*<span>.</span>*/}
         </ArticleHeading>
 
         <ArticleContentContainer>

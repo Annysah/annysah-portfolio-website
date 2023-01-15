@@ -30,7 +30,7 @@ const ProjectHeading = styled.h1`
   margin: 0 0 1rem 0;
 
   span {
-    color: #f9af14;
+    color: #ffec4e;
   }
 
   @media screen and (max-width: 768px) {
@@ -53,7 +53,7 @@ const Project = ({ themes }) => {
 
       <ProjectMain>
         <ProjectHeading>
-          projects<span>.</span>
+          projects{/*<span>.</span>*/}
         </ProjectHeading>
 
         <ProjectSlider slides={data} themes={themes} />

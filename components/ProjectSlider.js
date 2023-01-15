@@ -186,7 +186,7 @@ const CodeLink = styled.div`
   color: #fff;
   border-radius: 5px;
   padding: -10px 12px;
-  width: 160px;
+  width: 150px;
 
   a {
     @media screen and (max-width: 768px) {

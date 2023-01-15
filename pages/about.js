@@ -22,7 +22,7 @@ const AboutHeading = styled.div`
   }
 
   span {
-    color: #f9af14;
+    color: #ffec4e;
   }
 
   @media screen and (max-width: 767px) {
@@ -67,13 +67,13 @@ const About = () => {
       <AboutContainer>
         <AboutHeading>
           <h1>
-            about me<span>.</span>
+            about me{/*<span>.</span>*/}
           </h1>
         </AboutHeading>
         <AboutContent>
           <p>
             Hello, my name is Anisat Ahmed, and I am a front-end engineer and
-            technical writer based in Lagos, Nigeria. I like creating clean,
+            technical writer currently studying in the United States. I love creating clean,
             simple, and intuitive user interfaces for websites and web apps
             mostly with ReactJS.
           </p>

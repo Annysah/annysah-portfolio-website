@@ -1,8 +1,9 @@
 import styled from "styled-components";
 import Link from "next/link";
+import Image from "next/image";
 
 import { MdArrowRightAlt } from "react-icons/md";
-import { BsGithub } from "react-icons/bs";
+import { BsFileX, BsGithub } from "react-icons/bs";
 import { BsLinkedin } from "react-icons/bs";
 import { BsTwitter } from "react-icons/bs";
 import { SiGmail } from "react-icons/si";
@@ -46,7 +47,7 @@ const ResumeLink = styled.div`
   border-radius: 5px;
   padding: 12px 16px;
   width: 160px;
-  margin-top: 2.5rem;
+  margin-top: 2.4rem;
   font-family: "Space Grotesk", sans-serif;
 
   @media screen and (min-width: 350px) and (max-width: 767px) {
@@ -60,7 +61,7 @@ const BigCircle = styled.div`
   border-radius: 50%;
   border: 0.5px solid #ebecf0;
   position: absolute;
-  top: 19%;
+  top: 15%;
   right: 5%;
   z-index: -100;
 
@@ -80,8 +81,8 @@ const MidCircle = styled.div`
   border-radius: 50%;
   border: 0.5px solid #ebecf0;
   position: absolute;
-  top: 34%;
-  right: 12%;
+  top: 30%;
+  right: 12.5%;
   z-index: -100;
 
   @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -96,7 +97,13 @@ const MidCircle = styled.div`
   }
 `;
 
-const TwitterIcon = styled.div`
+const ImageWrapper = styled.div`
+  position: absolute;
+  top: 5%;
+  left: 10%;
+`;
+
+/*const TwitterIcon = styled.div`
   background-color: #c9eefb;
   width: 120px;
   height: 120px;
@@ -131,11 +138,10 @@ const Twitter = styled(BsTwitter)`
     font-size: 1rem;
   }
 `;
-
 const GithubIcon = styled.div`
   background-color: #555555;
-  width: 80px;
-  height: 80px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   position: absolute;
   top: 42%;
@@ -168,7 +174,44 @@ const Github = styled(BsGithub)`
   }
 `;
 
-const GmailIcon = styled.div`
+const LinkedInIcon = styled.div`
+  background-color: #0a66c2;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  position: absolute;
+  top: 84%;
+  right: 30%;
+  z-index: -100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    top: 55%;
+  }
+
+  @media screen and (max-width: 767px) {
+    width: 0px;
+    height: 0px;
+    top: 57%;
+    left: 8%;
+  }
+`;
+
+const LinkedIn = styled(BsLinkedin)`
+  color: #fff;
+  font-size: 1.6rem;
+  cursor: pointer;
+
+  @media screen and (max-width: 767px) {
+    color: #0077b5;
+    font-size: 1rem;
+  }
+`;*/
+
+/*const GmailIcon = styled.div`
   background-color: #fce8e6;
   width: 60px;
   height: 60px;
@@ -203,44 +246,7 @@ const Gmail = styled(SiGmail)`
     color: #db4437;
     font-size: 1rem;
   }
-`;
-
-const LinkedInIcon = styled.div`
-  background-color: #0a66c2;
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  position: absolute;
-  top: 84%;
-  right: 30%;
-  z-index: -100;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-
-  @media screen and (min-width: 768px) and (max-width: 1024px) {
-    top: 55%;
-  }
-
-  @media screen and (max-width: 767px) {
-    width: 0px;
-    height: 0px;
-    top: 57%;
-    left: 8%;
-  }
-`;
-
-const LinkedIn = styled(BsLinkedin)`
-  color: #fff;
-  font-size: 1.6rem;
-  cursor: pointer;
-
-  @media screen and (max-width: 767px) {
-    color: #0077b5;
-    font-size: 1rem;
-  }
-`;
+`;*/
 
 const HomeHeading = styled.p`
   font-size: 1.3rem;
@@ -258,7 +264,6 @@ const HomeHeading = styled.p`
 const HomeName = styled.h1`
   font-size: 3.5rem;
 
-
   @media screen and (max-width: 349px) {
     font-size: 2rem;
   }
@@ -274,7 +279,7 @@ const HomeName = styled.h1`
 `;
 
 const HomePara = styled.p`
-  font-size: 1.2rem;
+  font-size: 1.15rem;
 
   @media screen and (max-width: 349px) {
     font-size: 0.9rem;
@@ -297,9 +302,17 @@ const Main = ({ themes }) => {
   return (
     <>
       <BigCircle />
-      <MidCircle />
-      <TwitterIcon>
-        <Link href="https://twitter.com/AnisatAkinbani" passHref>
+      <MidCircle>
+        <ImageWrapper>
+          <Image
+            src="https://res.cloudinary.com/annysah/image/upload/v1673758675/avatar-removebg-preview_l0hive.png"
+            width={250}
+            height={250}
+          />
+        </ImageWrapper>
+      </MidCircle>
+      {/*<TwitterIcon>
+        <Link href="https://twitter.com/_annysah " passHref>
           <a>
             <Twitter />
           </a>
@@ -307,28 +320,20 @@ const Main = ({ themes }) => {
       </TwitterIcon>
 
       <GithubIcon>
-        <Link href="https://github.com/Annysah" passHref>
+        <Link href="https://github.com/Annysah">
           <a>
             <Github />
           </a>
         </Link>
       </GithubIcon>
 
-      <GmailIcon>
-        <Link href="https://anisatakinbani13@gmail.com" passHref>
-          <a>
-            <Gmail />
-          </a>
-        </Link>
-      </GmailIcon>
-
       <LinkedInIcon>
-        <Link href="https://linkedin.com/in/anisatakinbani" passHref>
+        <Link href="https://linkedin.com/in/anisatakinbani">
           <a>
             <LinkedIn />
           </a>
         </Link>
-      </LinkedInIcon>
+  </LinkedInIcon>*/}
 
       <LayoutContainer>
         <main>
@@ -337,14 +342,14 @@ const Main = ({ themes }) => {
               <HomeHeading>Hello 👋, my name is</HomeHeading>
               <HomeName>Anisat Ahmed</HomeName>
               <HomePara>
-                A Frontend Engineer, Technical Writer and an Open Source
-                Contributor.
+                A Frontend Engineer & Technical Writer and Open Source
+                <br />Contributor.
               </HomePara>
             </div>
 
             <div>
               <Link
-                href="https://drive.google.com/file/d/14vArcPQxd7vQ1SL7UZd-i1cEKLNb2E8H/view?usp=sharing"
+                href="https://drive.google.com/file/d/1uGaNOpQlRtN5c01cZUdtunqXUjP3syzD/view?usp=share_link"
                 passHref
               >
                 <ResumeLink>

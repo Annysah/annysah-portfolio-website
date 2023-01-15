@@ -9,7 +9,8 @@ export const lightTheme = {
 };
 
 export const darkTheme = {
-  body: "#232323",
+  //body: "#232323",
+  body: "#1c1c1e",
   fontColor: "#ffffff",
   cardBody: "#111",
   navFontColor: "#000",

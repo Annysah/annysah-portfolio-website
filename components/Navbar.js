@@ -26,17 +26,11 @@ const Nav = styled.nav`
 
   .logo {
     padding: 15px 0;
-    margin-left: 5.8rem;
+    //margin-left: 2.8rem;
     //font-family: "Sacramento", cursive;
     font-size: 1.6rem;
   }
 `;
-
-/*const LogoImage = styled.img`
-  width: 100px;
-  height: 100px;
-  margin-left: 7%;
-`*/
 
 const ImageWrapper = styled.div`
   margin-left: 7%;
@@ -57,7 +51,13 @@ const Navbar = ({ themes, icon }) => {
 
   return (
     <Nav>
-      <div className="logo">Annysah</div>
+      <div className="logo">
+        <Image
+          src="https://res.cloudinary.com/annysah/image/upload/v1673757074/Black_Yellow_Minimalist_Fashion_Logo__1_-removebg-preview_baymrn.png"
+          width={200}
+          height={200}
+        />
+      </div>
 
       {/*<ImageWrapper>
         <Image

@@ -33,7 +33,7 @@ const ContactHeading = styled.h1`
   font-weight: 900;
 
   span {
-    color: #f9af14;
+    color: #ffec4e;
   }
 
   @media screen and (max-width: 349px) {
@@ -86,7 +86,7 @@ const Contact = ({ themes }) => {
 
       <ContactContainer>
         <ContactHeading>
-          contact<span>.</span>
+          contact{/*<span>.</span>*/}
         </ContactHeading>
         <ContactContent>
           <p>
@@ -117,7 +117,7 @@ const Contact = ({ themes }) => {
             </Link>
           </div>
           <div>
-            <Link href="https://twitter.com/AnisatAkinbani" passHref>
+            <Link href="https://twitter.com/_annysah" passHref>
               <ContactLink>
                 <a>&#8226; Twitter</a>
                 <BiLink style={{ marginLeft: "0.2rem" }} />
