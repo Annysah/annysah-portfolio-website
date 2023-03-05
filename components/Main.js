@@ -183,7 +183,7 @@ const Main = ({ themes }) => {
                 <HomeHeading>Hello 👋, my name is</HomeHeading>
                 <HomeName>Anisat Ahmed</HomeName>
                 <HomePara>
-                  A Frontend Engineer & Technical Writer and Open Source
+                  A Frontend Engineer, Technical Writer & Open Source
                   <br />Contributor.
                 </HomePara>
               </div>
