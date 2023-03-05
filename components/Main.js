@@ -48,6 +48,10 @@ const HomeWrapper = styled.div`
     gap: 5rem;
   }
 
+  @media screen and (max-width: 768px) {
+    gap: 2.7rem;
+  }
+
   @media screen and (max-width: 576px) {
     gap: 1.5rem;
     padding-top: 2.2rem;
@@ -103,6 +107,11 @@ const HomeImage = styled.img`
   height: 360px;
   box-shadow: inset 0 0 0 8px rgb(255, 255, 255 / 30%);
   animation: ${profile} 8s ease-in-out infinite 1s;
+
+  @media screen and (max-width: 768px) {
+    width: 300px;
+    height: 300px;
+  }
 
   @media screen and (max-width: 576px) {
     width: 280px;
