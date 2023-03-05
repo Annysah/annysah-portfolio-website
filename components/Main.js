@@ -10,7 +10,7 @@ import { SiGmail } from "react-icons/si";
 
 const LayoutContainer = styled.div`
   padding: 0 0.5rem;
-  margin-top: 12.5rem;
+  margin-top: 8rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -39,7 +39,7 @@ const HomeWrapper = styled.div`
   padding-top: 4.5rem;
 
   @media screen and (max-width: 1290px) {
-    padding-top: 2.5rem;
+    padding-top: 2rem;
     column-gap: 8rem;
   }
 
@@ -88,11 +88,9 @@ const profile = keyframes`
   0% {
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
   }
-
   50% {
     border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
   }
-
   100% {
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
   }
@@ -126,7 +124,6 @@ const HomeImage = styled.img`
   @media screen and (max-width: 375px) {
     display: none;
   }
-
 `
 
 const HomeHeading = styled.p`
@@ -144,16 +141,13 @@ const HomeHeading = styled.p`
 
 const HomeName = styled.h1`
   font-size: 3.5rem;
-
   @media screen and (max-width: 349px) {
     font-size: 2rem;
   }
-
   @media screen and (min-width: 350px) and (max-width: 767px) {
     font-size: 2.5rem;
     padding: 0 1rem;
   }
-
   @media screen and (max-width: 1024px) {
     font-size: 3rem;
   }
@@ -161,7 +155,6 @@ const HomeName = styled.h1`
 
 const HomePara = styled.p`
   font-size: 1.15rem;
-
   @media screen and (max-width: 349px) {
     font-size: 0.9rem;
     line-height: 25px;
@@ -172,7 +165,7 @@ const HomePara = styled.p`
     padding: 0 1rem;
     line-height: 30px;
   }
-
+  
   @media screen and (min-width: 768px) and (max-width: 1024px) {
     width: 360px;
     line-height: 2;
