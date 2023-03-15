@@ -127,9 +127,9 @@ const Articles = ({ themes }) => {
         <ArticleContentContainer>
           <ArticleContents>
             <ArticleContentTop>
-              <ArticleTitle>What&apos;s New in React 18</ArticleTitle>
+              <ArticleTitle>Build a Todo App with Next.js &amp; AWS Amplify</ArticleTitle>
               <Link
-                href="https://annysah.hashnode.dev/whats-new-in-react-18-cl47byk93006x8mnv6t346j04"
+                href="https://dev.to/aws-builders/build-a-todo-app-with-nextjs-and-aws-amplify-59ld"
                 passHref
               >
                 <ArticleArrow>
@@ -139,20 +139,20 @@ const Articles = ({ themes }) => {
                 </ArticleArrow>
               </Link>
             </ArticleContentTop>
-            <ArticleDate>June, 2022</ArticleDate>
+            <ArticleDate>January, 2023</ArticleDate>
             <ArticleDescription>
               React 18 consists of some cool new features added to the
               open-source JavaScript library.
             </ArticleDescription>
           </ArticleContents>
 
-          {/*<ArticleContents>
+          <ArticleContents>
             <ArticleContentTop>
               <ArticleTitle>
-                7 Awesome React UI Component Libraries
+                Getting started with AWS Amplify
               </ArticleTitle>
               <Link
-                href="https://annysah.hashnode.dev/7-awesome-react-ui-component-libraries-ckxhmzxfz02fqhts170u43snt"
+                href="https://dev.to/aws-builders/getting-started-with-aws-amplify-3gp9"
                 passHref
               >
                 <ArticleArrow>
@@ -162,21 +162,19 @@ const Articles = ({ themes }) => {
                 </ArticleArrow>
               </Link>
             </ArticleContentTop>
-            <ArticleDate>December, 2021</ArticleDate>
+            <ArticleDate>January, 2023</ArticleDate>
             <ArticleDescription>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum
-              bibendum nisi adipiscing odio.
+              AWS Amplify is a powerful development platform for building secure, scalable mobile and web applications.
             </ArticleDescription>
-  </ArticleContents>*/}
+  </ArticleContents>
 
           <ArticleContents>
             <ArticleContentTop>
               <ArticleTitle>
-                GraphQL API Requests with Typescript, React Query & GraphQL Code
-                Generator
+                Build a Shopping Cart with NextJS, Xata and Cloudinary
               </ArticleTitle>
               <Link
-                href="https://annysah.hashnode.dev/graphql-api-requests-with-typescript-react-query-and-graphql-code-generator-ckxx799pp045du4s1fdvyacj5"
+                href="https://dev.to/hackmamba/build-a-shopping-cart-with-nextjs-xata-and-cloudinary-13k"
                 passHref
               >
                 <ArticleArrow>
@@ -186,10 +184,9 @@ const Articles = ({ themes }) => {
                 </ArticleArrow>
               </Link>
             </ArticleContentTop>
-            <ArticleDate>January, 2022</ArticleDate>
+            <ArticleDate>November, 2022</ArticleDate>
             <ArticleDescription>
-              Learn how to make GraphQL requests in React with React Query,
-              Typescript(TS) and GraphQL Code Generator.
+              Learn how to build a shopping cart with NextJS, Xata and Cloudinary.
             </ArticleDescription>
           </ArticleContents>
         </ArticleContentContainer>

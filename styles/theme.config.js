@@ -39,7 +39,7 @@ body {
    transition: all 0.50s linear;
    width: 100%;
    height: 100vh;
-   overflow: hidden;
+   //overflow: hidden;
 }
 
 input, textarea, button {

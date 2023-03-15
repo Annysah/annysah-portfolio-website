@@ -3,14 +3,10 @@ import Link from "next/link";
 import Image from "next/image";
 
 import { MdArrowRightAlt } from "react-icons/md";
-import { BsFileX, BsGithub } from "react-icons/bs";
-import { BsLinkedin } from "react-icons/bs";
-import { BsTwitter } from "react-icons/bs";
-import { SiGmail } from "react-icons/si";
 
 const LayoutContainer = styled.div`
   padding: 0 0.5rem;
-  margin-top: 8rem;
+  margin-top: 10rem;
   display: flex;
   flex-direction: column;
   justify-content: center;

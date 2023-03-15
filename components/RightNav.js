@@ -55,7 +55,7 @@ const RightNav = ({ open, themes  }) => {
           about<span>.</span>
         </StyledLink>
       </Link>
-      <Link href="/project" passHref>
+      <Link href="/projects" passHref>
         <StyledLink>
           projects<span>.</span>
         </StyledLink>

@@ -2,7 +2,7 @@ import styled from "styled-components";
 import Head from "next/head";
 
 import { data } from "../data/data";
-import ProjectSlider from "../components/ProjectSlider";
+import ProjectSliders from "../components/ProjectSliders";
 
 const ProjectMain = styled.div`
   margin-top: 6.5rem;
@@ -56,7 +56,7 @@ const Project = ({ themes }) => {
           projects{/*<span>.</span>*/}
         </ProjectHeading>
 
-        <ProjectSlider slides={data} themes={themes} />
+        <ProjectSliders slides={data} themes={themes} />
       </ProjectMain> 
     </>
   );

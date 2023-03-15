@@ -22,10 +22,7 @@ const NavbarContent = styled.nav`
   align-items: center;
   justify-content: space-between;
   height: 65px;
-  /*height: ${({ close }) => {
-    close ? "100vh" : "65px";
-  }};*/
-  z-index: -100;
+  z-index: 100;
   padding: 0 3.5rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   background: ${({ theme }) => theme.body};
@@ -131,7 +128,7 @@ const NavOverlayContent = styled.div`
   position: fixed;
   top: 65px;
   left: 50%;
-  z-index: 2;
+  z-index: 100;
   opacity: .7;
 
   @media screen and (min-width: 767px) {
@@ -170,7 +167,7 @@ const NavBar = ({ themes, icon }) => {
                 about<span>.</span>
               </StyledLink>
             </Link>
-            <Link href="/project" passHref>
+            <Link href="/projects" passHref>
               <StyledLink>
                 projects<span>.</span>
               </StyledLink>
@@ -208,7 +205,7 @@ const NavBar = ({ themes, icon }) => {
                 about<span>.</span>
               </StyledLink>
             </Link>
-            <Link href="/project" passHref>
+            <Link href="/projects" passHref>
               <StyledLink>
                 projects<span>.</span>
               </StyledLink>

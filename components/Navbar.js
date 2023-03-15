@@ -1,16 +1,19 @@
 import styled from "styled-components";
 import Image from "next/image";
 
-//import { useState } from "react";
-
 import Burger from "./Burger";
 
-const Nav = styled.nav`
+const Header = styled.header`
+  width: 100%;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  width: 100%;
+  z-index: 1000;
+  background-color: ${({ theme }) => theme.cardBody};
+`
+
+const Nav = styled.nav`
   height: 70px;
   padding: 0 3.5rem;
   display: flex;
@@ -19,21 +22,11 @@ const Nav = styled.nav`
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  /*box-shadow: 0px 1px 2px 0px rgba(0,255,255,0.7),
-            1px 2px 4px 0px rgba(0,255,255,0.7),
-            2px 4px 8px 0px rgba(0,255,255,0.7),
-            2px 4px 16px 0px rgba(0,255,255,0.7);*/
-
+  
   .logo {
     padding: 15px 0;
-    //margin-left: 2.8rem;
-    //font-family: "Sacramento", cursive;
     font-size: 1.6rem;
   }
-`;
-
-const ImageWrapper = styled.div`
-  margin-left: 7%;
 `;
 
 const NavThemeSwitch = styled.div`
@@ -41,39 +34,22 @@ const NavThemeSwitch = styled.div`
 `;
 
 const Navbar = ({ themes, icon }) => {
-  /*const [isSwitch, setIsSwitch] = useState(false);
-
-  if (themes === "light") {
-    setIsSwitch(true);
-  } else {
-    setIsSwitch(false);
-  }*/
-
   return (
-    <Nav>
-      <div className="logo">
-        <Image
-          src="https://res.cloudinary.com/annysah/image/upload/v1673757074/Black_Yellow_Minimalist_Fashion_Logo__1_-removebg-preview_baymrn.png"
-          width={200}
-          height={200}
-        />
-      </div>
+    <Header>
+      <Nav>
+        <div className="logo">
+          <Image
+            src="https://res.cloudinary.com/annysah/image/upload/v1673757074/Black_Yellow_Minimalist_Fashion_Logo__1_-removebg-preview_baymrn.png"
+            width={200}
+            height={200}
+          />
+        </div>
 
-      {/*<ImageWrapper>
-        <Image
-          src={
-            "https://res.cloudinary.com/annysah/image/upload/v1650998817/portfolio/Group_2_wok4zy.png"
-          }
-          width={150}
-          height={50}
-          quality={70}
-        />
-        </ImageWrapper>*/}
+        <Burger themes={themes} icon={icon} />
 
-      <Burger themes={themes} icon={icon} />
-
-      <NavThemeSwitch onClick={() => themes()}>{icon}</NavThemeSwitch>
-    </Nav>
+        <NavThemeSwitch onClick={() => themes()}>{icon}</NavThemeSwitch>
+      </Nav>
+    </Header>
   );
 };
 
