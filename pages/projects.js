@@ -93,7 +93,7 @@ const ProjectContainer = styled.div`
     grid-template-columns: 1fr;
   }
 `
-const projects = () => {
+const Projects = () => {
   const [item, setItem] = useState({ name: 'All'})
   const [ works, setWorks] = useState([]);
 
@@ -144,4 +144,4 @@ const projects = () => {
   )
 }
 
-export default projects
+export default Projects
