@@ -167,7 +167,7 @@ const NavBar = ({ themes, icon }) => {
                 about<span>.</span>
               </StyledLink>
             </Link>
-            <Link href="/projects" passHref>
+            <Link href="/project" passHref>
               <StyledLink>
                 projects<span>.</span>
               </StyledLink>
@@ -205,7 +205,7 @@ const NavBar = ({ themes, icon }) => {
                 about<span>.</span>
               </StyledLink>
             </Link>
-            <Link href="/projects" passHref>
+            <Link href="/project" passHref>
               <StyledLink>
                 projects<span>.</span>
               </StyledLink>

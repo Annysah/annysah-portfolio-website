@@ -1,12 +1,12 @@
+import React, { useState, useEffect } from "react";
+
 import styled from "styled-components";
 import Head from "next/head";
 
-import { data } from "../data/data";
-import ProjectSliders from "../components/ProjectSliders";
+import ProjectMapData from "../components/ProjectMapData";
 
 const ProjectMain = styled.div`
   margin-top: 6.5rem;
-  //font-family: 'Space Grotesk', sans-serif;
 
   @media screen and (max-width: 1024px) {
     margin-top: 14rem;
@@ -19,7 +19,6 @@ const ProjectMain = styled.div`
   @media screen and (max-width: 425px) {
     margin-top: 5.2rem;
   }
-
 `
 
 const ProjectHeading = styled.h1`
@@ -43,7 +42,7 @@ const ProjectHeading = styled.h1`
   }
 `;
 
-const Project = ({ themes }) => {
+const project = () => {
   return (
     <>
       <Head>
@@ -53,13 +52,13 @@ const Project = ({ themes }) => {
 
       <ProjectMain>
         <ProjectHeading>
-          projects{/*<span>.</span>*/}
+          projects
         </ProjectHeading>
 
-        <ProjectSliders slides={data} themes={themes} />
-      </ProjectMain> 
+        <ProjectMapData />
+      </ProjectMain>
     </>
-  );
-};
+  )
+}
 
-export default Project;
+export default project
