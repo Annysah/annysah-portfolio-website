@@ -1,6 +1,8 @@
+import React, { useState, useEffect } from "react";
+
 import styled from "styled-components";
 import Head from "next/head";
-import { useState, useEffect } from "react";
+
 import ProjectItems from "../components/ProjectItems";
 
 import { data } from "../data/data";
@@ -94,7 +96,6 @@ const ProjectContainer = styled.div`
 const projects = () => {
   const [item, setItem] = useState({ name: 'All'})
   const [ works, setWorks] = useState([]);
-  const [active, setActive] = useState(0);
 
   useEffect(() => {
     if(item.name === "All") {

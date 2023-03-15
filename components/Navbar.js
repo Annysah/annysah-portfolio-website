@@ -42,6 +42,7 @@ const Navbar = ({ themes, icon }) => {
             src="https://res.cloudinary.com/annysah/image/upload/v1673757074/Black_Yellow_Minimalist_Fashion_Logo__1_-removebg-preview_baymrn.png"
             width={200}
             height={200}
+            alt="Annysah Logo"
           />
         </div>
 
