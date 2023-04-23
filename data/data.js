@@ -68,7 +68,77 @@ export const data = [
     demo: "https://annysah-portfolio.vercel.app/",
     stack: "NextJS, Styled Components, Cloudinary",
     category: "Web Pages"
-  }
+  },
+  {
+    id: 8,
+    image: "https://res.cloudinary.com/annysah/image/upload/v1682207513/Resnet_qipwnt.png",
+    title: "Resnet",
+    description: "A webpage built for the Resnet Department of ISU",
+    source: "#",
+    demo: "https://resnet.illinoisstate.edu/",
+    stack: "HTML, CSS, OmniCMS",
+    category: "Web Pages"
+  },
+  {
+    id: 9,
+    image: "https://res.cloudinary.com/annysah/image/upload/v1682207515/CIUS_iad4oe.png",
+    title: "Council of Illinois University Senates",
+    description: "A webpage built for the Council of Illinois University Senates",
+    source: "#",
+    demo: "https://cius.illinoisstate.edu/",
+    stack: "HTML, CSS, OmniCMS",
+    category: "Web Pages"
+  },
+  {
+    id: 10,
+    image: "https://res.cloudinary.com/annysah/image/upload/v1682207513/MasterPlan_f4vfhr.png",
+    title: "Illinois State University Master Plan",
+    description: "A webpage detailing what ISU Master Plan is about",
+    source: "#",
+    demo: "https://masterplan.illinoisstate.edu/",
+    stack: "HTML, CSS, OmniCMS",
+    category: "Web Pages"
+  },
+  {
+    id: 11,
+    image: "https://res.cloudinary.com/annysah/image/upload/v1682208248/CreditU_glvdpg.png",
+    title: "It'sMyCU",
+    description: "A simple redesign of the ItsMyCreditUnion Website",
+    source: "#",
+    demo: "https://xd.adobe.com/view/371f9b5d-ae0d-4fe4-9e48-ade07c8a490b-624c/",
+    stack: "AdobeXD",
+    category: "Design"
+  },
+  {
+    id: 12,
+    image: "https://res.cloudinary.com/annysah/image/upload/v1682208248/GoMag_p2myh9.png",
+    title: "GoMagnifier",
+    description: "An Augmented Reality UI meant to help people with visual impairments (bad or poor eye sight) read & magnify grocery items when they go shopping",
+    source: "#",
+    demo: "https://www.figma.com/file/AfCQGxpQ0DJPjyQmKYN0iR/GoMagnifier-UI?node-id=0%3A1&t=YUZ72qk23NOL4yBP-1",
+    stack: "Figma",
+    category: "Design"
+  },
+  {
+    id: 13,
+    image: "https://res.cloudinary.com/annysah/image/upload/v1682208862/fireworks_nndkg1.png",
+    title: "Fireworks",
+    description: "A fireworks particle system created with P5JS",
+    source: "#",
+    demo: "https://annysah.github.io/CTK302/Unit3/particles/",
+    stack: "P5.js",
+    category: "Others"
+  },
+  {
+    id: 14,
+    image: "https://res.cloudinary.com/annysah/image/upload/v1682208863/FruitCat_wos8oq.png",
+    title: "Fruit Catcher",
+    description: "A fruit game concept created with the P5JS library.",
+    source: "#",
+    demo: "https://annysah.github.io/CTK302/Unit3/mp3/",
+    stack: "P5.js",
+    category: "Others"
+  },
 ]
 
 

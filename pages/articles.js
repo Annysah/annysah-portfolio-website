@@ -10,8 +10,7 @@ const ArticleContainer = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-family: "Space Grotesk", sans-serif;
-  height: 100vh;
+  margin-top: 4rem;
 
   @media screen and (max-width: 349px) {
     margin: 1rem 1.1rem 8rem;
@@ -21,9 +20,9 @@ const ArticleContainer = styled.div`
     margin: 1rem 1.2rem 7rem;
   }
 
-  @media screen and (min-width: 768px) {
+  /*@media screen and (min-width: 768px) {
     margin: 0 1.1rem 4rem;
-  }
+  }*/
 `;
 
 const ArticleHeading = styled.h1`
