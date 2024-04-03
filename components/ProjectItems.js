@@ -46,7 +46,6 @@ const ProjectTitle = styled.h2`
 `
 
 const ProjectDescription = styled.p`
-  font-family: "Work Sans", sans-serif;
     @media screen and (max-width: 350px) {
     font-size: 0.8rem;
   }
