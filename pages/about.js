@@ -72,14 +72,14 @@ const About = () => {
         </AboutHeading>
         <AboutContent>
           <p>
-            Hey there, I'm Anisat Ahmed, a front-end engineer and technical writer currently immersed in the world of Creative Technologies as I pursue my Master's degree in the United States.
+            Hey there, I&apos;m Anisat Ahmed, a front-end engineer and technical writer currently immersed in the world of Creative Technologies as I pursue my Master&apos;s degree in the United States.
           </p>
 
           <p>
             My playground? Crafting clean, intuitive user interfaces for websites and web apps. I thrive on simplicity, turning intricate ideas into seamless experiences, with ReactJS as my trusted companion.
           </p>
           <p>
-            Join me in the pursuit of digital elegance. Let's create interfaces that not only function flawlessly but also delight users at every click.
+            Join me in the pursuit of digital elegance. Let&apos;s create interfaces that not only function flawlessly but also delight users at every click.
           </p>
         </AboutContent>
       </AboutContainer>
