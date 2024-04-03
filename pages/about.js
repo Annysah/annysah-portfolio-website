@@ -1,8 +1,5 @@
 import styled from "styled-components";
 import Head from "next/head";
-import Image from "next/image";
-
-import photo from "../images/aboutphoto.jpg";
 
 const AboutContainer = styled.div`
   padding: 3rem 0.5rem;
