@@ -43,10 +43,6 @@ const StyledLink = styled.a`
     padding: 0rem 1rem;
   }
 
-  span {
-    color: #f9af14;
-  }
-
   &:focus {
     font-weight: 900;
   }
@@ -104,9 +100,9 @@ const NavbarLinkContainer = styled.div`
   font-family: "Space Grotesk", sans-serif;
 
   @media screen and (max-width: 768px) {
-      display: none;
+    display: none;
   }
-`
+`;
 
 const NavbarLink = styled.div`
   //position: relative;
@@ -129,7 +125,7 @@ const NavOverlayContent = styled.div`
   top: 65px;
   left: 50%;
   z-index: 100;
-  opacity: .7;
+  opacity: 0.7;
 
   @media screen and (min-width: 767px) {
     display: none;
@@ -158,72 +154,50 @@ const NavBar = ({ themes, icon }) => {
         <NavbarLinkContainer close={close}>
           <NavbarLink>
             <Link href="/" passHref>
-              <StyledLink>
-                home<span>.</span>
-              </StyledLink>
+              <StyledLink>home</StyledLink>
             </Link>
             <Link href="/about" passHref>
-              <StyledLink>
-                about<span>.</span>
-              </StyledLink>
+              <StyledLink>about</StyledLink>
             </Link>
             <Link href="/project" passHref>
-              <StyledLink>
-                projects<span>.</span>
-              </StyledLink>
+              <StyledLink>projects</StyledLink>
             </Link>
             <Link href="/stacks" passHref>
-              <StyledLink>
-                stacks<span>.</span>
-              </StyledLink>
+              <StyledLink>stacks</StyledLink>
             </Link>
             <Link href="/articles" passHref>
-              <StyledLink>
-                articles<span>.</span>
-              </StyledLink>
+              <StyledLink>articles</StyledLink>
             </Link>
             <Link href="/contact" passHref>
-              <StyledLink>
-                contact<span>.</span>
-              </StyledLink>
+              <StyledLink>contact</StyledLink>
             </Link>
           </NavbarLink>
         </NavbarLinkContainer>
 
         {close && (
           <NavOverlayContent>
-            <MenuBarClose onClick={() => {
-            setClose((current) => !current);
-          }} />
+            <MenuBarClose
+              onClick={() => {
+                setClose((current) => !current);
+              }}
+            />
             <Link href="/" passHref>
-              <StyledLink>
-                home<span>.</span>
-              </StyledLink>
+              <StyledLink>home</StyledLink>
             </Link>
             <Link href="/about" passHref>
-              <StyledLink>
-                about<span>.</span>
-              </StyledLink>
+              <StyledLink>about</StyledLink>
             </Link>
             <Link href="/project" passHref>
-              <StyledLink>
-                projects<span>.</span>
-              </StyledLink>
+              <StyledLink>projects</StyledLink>
             </Link>
             <Link href="/stacks" passHref>
-              <StyledLink>
-                stacks<span>.</span>
-              </StyledLink>
+              <StyledLink>stacks</StyledLink>
             </Link>
             <Link href="/articles" passHref>
-              <StyledLink>
-                articles<span>.</span>
-              </StyledLink>
+              <StyledLink>articles</StyledLink>
             </Link>
             <Link href="/contact" passHref>
-              <StyledLink>
-                contact<span>.</span>
-              </StyledLink>
+              <StyledLink>contact</StyledLink>
             </Link>
           </NavOverlayContent>
         )}

@@ -61,7 +61,7 @@ const HomeWrapper = styled.div`
   @media screen and (max-width: 395px) {
     gap: 2rem;
   }
-`
+`;
 
 const ResumeLink = styled.div`
   display: flex;
@@ -73,7 +73,7 @@ const ResumeLink = styled.div`
   padding: 12px 16px;
   width: 160px;
   margin-top: 2.4rem;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Work Sans", sans-serif;
 
   @media screen and (min-width: 350px) and (max-width: 767px) {
     margin-left: 5%;
@@ -90,7 +90,7 @@ const profile = keyframes`
   100% {
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
   }
-`
+`;
 
 const HomeImage = styled.img`
   background: url("https://res.cloudinary.com/annysah/image/upload/v1673760709/avatar_eudw8p.jpg");
@@ -120,11 +120,12 @@ const HomeImage = styled.img`
   @media screen and (max-width: 375px) {
     display: none;
   }
-`
+`;
 
 const HomeHeading = styled.p`
-  font-size: 1.3rem;
-  //font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.5rem;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 300;
   @media screen and (max-width: 349px) {
     margin-left: -5%;
   }
@@ -150,7 +151,9 @@ const HomeName = styled.h1`
 `;
 
 const HomePara = styled.p`
-  font-size: 1.15rem;
+  font-size: 1.5rem;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 300;
   @media screen and (max-width: 349px) {
     font-size: 0.9rem;
     line-height: 25px;
@@ -161,7 +164,7 @@ const HomePara = styled.p`
     padding: 0 1rem;
     line-height: 30px;
   }
-  
+
   @media screen and (min-width: 768px) and (max-width: 1024px) {
     width: 360px;
     line-height: 2;
@@ -180,7 +183,8 @@ const Main = ({ themes }) => {
                 <HomeName>Anisat Ahmed</HomeName>
                 <HomePara>
                   A Frontend Engineer, Technical Writer & Open Source
-                  <br />Contributor.
+                  <br />
+                  Contributor.
                 </HomePara>
               </div>
 
@@ -199,7 +203,7 @@ const Main = ({ themes }) => {
               </div>
             </div>
             <div>
-              <HomeImage />
+              <HomeImage src="https://res.cloudinary.com/annysah/image/upload/v1673760709/avatar_eudw8p.jpg" alt="An image of Anisat Ahmed" />
             </div>
           </HomeWrapper>
         </main>

@@ -47,8 +47,10 @@ const ContactHeading = styled.h1`
 `;
 
 const ContactContent = styled.div`
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 300;
   text-align: left;
-  font-size: 1.2rem;
   padding: 0 3rem;
   line-height: 2;
   margin-top: -2rem;
@@ -96,7 +98,7 @@ const Contact = ({ themes }) => {
           <p>
             Send me an email on:
             <span style={{ display: "inline-block", marginLeft: "5px" }}>
-              <Link href="/" passHref>
+              <Link href="mailto:anisatakinbani13@gmail.com" passHref>
                 <ContactLink>
                   <a
                     style={{ borderBottom: "2px solid #f0f0f0" }}

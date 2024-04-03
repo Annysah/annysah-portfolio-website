@@ -11,11 +11,9 @@ const AboutContainer = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-family: "Space Grotesk", sans-serif;
 `;
 
 const AboutHeading = styled.div`
-  font-weight: 900;
 
   h1 {
     font-size: 2.5rem;
@@ -34,7 +32,9 @@ const AboutHeading = styled.div`
 
 const AboutContent = styled.div`
   text-align: left;
-  font-size: 1.2rem;
+  font-weight: 300;
+  font-family: "Work Sans", sans-serif;
+  font-size: 2rem;
   padding: 0 18rem;
   line-height: 2;
   margin-top: -1rem;
@@ -72,20 +72,14 @@ const About = () => {
         </AboutHeading>
         <AboutContent>
           <p>
-            Hello, my name is Anisat Ahmed, and I am a front-end engineer and
-            technical writer currently studying in the United States. I love creating clean,
-            simple, and intuitive user interfaces for websites and web apps
-            mostly with ReactJS.
+            Hey there, I'm Anisat Ahmed, a front-end engineer and technical writer currently immersed in the world of Creative Technologies as I pursue my Master's degree in the United States.
           </p>
 
           <p>
-            I enjoy learning new things a lot. In my spare time, I
-            contribute to open source projects, particularly in the area of
-            technical documentation.
+            My playground? Crafting clean, intuitive user interfaces for websites and web apps. I thrive on simplicity, turning intricate ideas into seamless experiences, with ReactJS as my trusted companion.
           </p>
           <p>
-            Asides coding, I enjoy going for walks on the beach and
-            binge-watching videos on YouTube from my favorite content creators.
+            Join me in the pursuit of digital elegance. Let's create interfaces that not only function flawlessly but also delight users at every click.
           </p>
         </AboutContent>
       </AboutContainer>

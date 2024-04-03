@@ -46,6 +46,7 @@ const ProjectTitle = styled.h2`
 `
 
 const ProjectDescription = styled.p`
+  font-family: "Work Sans", sans-serif;
     @media screen and (max-width: 350px) {
     font-size: 0.8rem;
   }
@@ -75,7 +76,7 @@ const ProjectItems = ({ item }) => {
     <>
         <ProjectCard>
             <ProjectImage>
-                <Image src={item.image} alt="Project Images" width={400} height={200} />
+                <Image src={item.image} alt={item.alt} width={400} height={200} />
             </ProjectImage>
 
             <ProjectTitle>{item.title}</ProjectTitle>
