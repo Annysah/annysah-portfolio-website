@@ -190,11 +190,11 @@ const Main = ({ themes }) => {
 
               <div>
                 <Link
-                  href="https://drive.google.com/file/d/1uGaNOpQlRtN5c01cZUdtunqXUjP3syzD/view?usp=share_link"
+                  href="./contact"
                   passHref
                 >
                   <ResumeLink>
-                    <a>View resume</a>
+                    <a>Get in Touch</a>
                     <MdArrowRightAlt
                       style={{ marginLeft: "0.2rem", fontSize: "1.5rem" }}
                     />
